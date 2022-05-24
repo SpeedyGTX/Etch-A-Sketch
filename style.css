@@ -1,24 +1,86 @@
 body {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #3b0404;
+    font-family: Arial;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+#buttonContainer{
+    display: flex;
+    gap: 10px;
+    margin: 20px 0 20px;
+    font-size: 10px;
+}
+
+#buttonContainer button{
+    padding: 10px;
+    box-shadow: 3px 3px black;
+    border-radius: 10px;
+    border: solid black 2px;
+    background-color: #c60e02;
+    color: #f4c834;
+    font-size: 20px;
+    text-shadow: 2px 2px 5px black;
+}
+
+#buttonContainer button:hover{
+    cursor: pointer;
+}
+
+#mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c60e02;
+    box-shadow: 10px 10px;
+    border-radius: 30px;
+    border: solid black 4px;
+    width: 650px;
+    padding: 20px 0 20px;
+}
+
+#title {
+    margin-bottom: 10px;
+    text-shadow: 4px 2px 5px black;
+    color: #f4c834;
 }
 
 #container {
     display: flex;
-    width: 960px;
+    width: 500px;
     flex-wrap: wrap;
-    border: solid black 1px;
+    border: solid black 5px;
+    background-color: #9e9d98;
 }
 
 #container div {
-    width: 60px;
-    height: 60px;
-    
+    background-color: black;
+    opacity: 0;
 }
 
-.color {
-    background-color: black;
+#knobContainer {
+    width: 90%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
 }
+
+.sphere {
+    height: 100px;
+    width: 100px;
+    background-color: #ebe0e9;
+    border-radius: 50%;
+    box-shadow: 5px 5px;
+    border: solid black 2px;
+}
+
+
+
+
 
 
 
